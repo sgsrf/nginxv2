@@ -1,6 +1,6 @@
 FROM nginx:alpine
-
-ENV v2VER=4.20.0
+#4.20.0
+ENV v2VER=4.23.1
 
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && chmod -R g+rwx /var/cache/nginx /var/run /var/log/nginx /usr/share/nginx/html \
